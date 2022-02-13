@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+ul.inline li {
+  display: inline;
+  margin: 0.5em 1em;
+}
+
+.user form.button_to {
+  display: inline;
+  margin-left: 1em;
+}

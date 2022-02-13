@@ -1,0 +1,5 @@
+<h1><%= @post.title %></h1>
+<h2>By <%= @post.author %></h2>
+<p><%= @post.body %></p>
+<%= button_to "Delete", can_can_can_post_path(@post), method: :delete %>
+<%= link_to "Back to index", can_can_can_posts_path %>

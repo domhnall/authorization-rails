@@ -18,6 +18,18 @@
         </div>
       <%- end %>
     <%- end %>
+    <div class="user">
+      You are logged in as: <strong><%= current_user.name %></strong>
+      <%= button_to "Switch", session_path, method: :put %>
+    </div>
+    <div>
+      <ul class="inline">
+        <li><%= link_to "No auth", posts_path %></li>
+        <li><%= link_to "CanCanCan", can_can_can_posts_path %></li>
+        <li><%= link_to "Pundit", pundit_posts_path %></li>
+        <li><%= link_to "Rolify", rolify_posts_path %></li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>
