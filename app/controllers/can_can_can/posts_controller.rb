@@ -10,7 +10,6 @@ class CanCanCan::PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id].to_i)
-    byebug
     authorize! :destroy, @post
     @post.destroy
     redirect_to can_can_can_posts_path, flash: { warning: "Post has been successfully deleted" }
