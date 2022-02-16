@@ -24,9 +24,9 @@
     </div>
     <div>
       <ul class="inline">
-        <li><%= link_to "No auth", posts_path %></li>
-        <li><%= link_to "CanCan", can_can_posts_path %></li>
-        <li><%= link_to "Pundit", pundit_posts_path %></li>
+        <li><%= link_to "No auth", posts_path, class: @selected_tab=="no_auth" ? "selected" : nil %></li>
+        <li><%= link_to "CanCan", can_can_posts_path, class: @selected_tab=="can_can" ? "selected" : nil %></li>
+        <li><%= link_to "Pundit", pundit_posts_path, class: @selected_tab=="pundit" ? "selected" : nil  %></li>
       </ul>
     </div>
     <%= yield %>

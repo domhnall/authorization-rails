@@ -18,6 +18,24 @@ ul.inline li {
   margin: 0.5em 1em;
 }
 
+ul.inline li a {
+  background-color: #555555;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+}
+
+ul.inline li a.selected {
+  background-color: #3030D0;
+}
+
+.user {
+  margin-bottom: 40px;
+}
+
 .user form.button_to {
   display: inline;
   margin-left: 1em;
