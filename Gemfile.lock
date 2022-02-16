@@ -169,7 +169,6 @@ GEM
     rake (13.0.6)
     regexp_parser (2.2.1)
     rexml (3.2.5)
-    rolify (6.0.0)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
     rspec-expectations (3.11.0)
@@ -239,7 +238,6 @@ DEPENDENCIES
   puma (~> 5.0)
   pundit
   rails (~> 7.0.2, >= 7.0.2.2)
-  rolify
   rspec-rails
   selenium-webdriver
   sprockets-rails

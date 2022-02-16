@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
+  resource :session, only: [:update]
+
   resources :posts, only: [:index, :show, :destroy]
 
-
-  [:pundit, :can_can_can, :rolify].each do |lib|
-    namespace lib do
-      resources :posts, only: [:index, :show, :destroy]
-    end
+  namespace :pundit do
+    resources :posts, only: [:index, :show, :destroy]
   end
 
-  resource :session, only: [:update]
+  namespace :can_can_can do
+    resources :posts, only: [:index, :show, :destroy]
+  end
 end

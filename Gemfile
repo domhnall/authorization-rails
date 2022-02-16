@@ -74,5 +74,4 @@ end
 
 gem 'pundit'
 gem 'cancancan'
-gem 'rolify'
 gem 'rspec-rails'

@@ -14,3 +14,8 @@ in the context of a simple blog post controller.
 > git pull
 > bundle install
 > bundle exec rake db:drop && bundle exec rake db:migrate && bundle exec rake db:seed
+
+
+## Run the tests
+
+> bundle exec rake

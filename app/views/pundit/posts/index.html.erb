@@ -1,0 +1,12 @@
+<h1>List of posts</h1>
+<ul>
+  <%- @posts.each do |post| %>
+    <li>
+      <%= link_to pundit_post_path(post) do %>
+        <%= post.title %>
+      <%- end %>
+      by <%= post.author %>
+      (<%= post.published ? 'published' : 'draft' %>)
+    </li>
+  <%- end %>
+</ul>
