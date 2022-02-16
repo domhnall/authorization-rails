@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :posts, only: [:index, :show, :destroy]
   end
 
-  namespace :can_can_can do
+  namespace :can_can do
     resources :posts, only: [:index, :show, :destroy]
   end
 end

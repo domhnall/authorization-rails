@@ -2,7 +2,7 @@
 <ul>
   <%- @posts.each do |post| %>
     <li>
-      <%= link_to can_can_can_post_path(post) do %>
+      <%= link_to can_can_post_path(post) do %>
         <%= post.title %>
       <%- end %>
       by <%= post.author %>

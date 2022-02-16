@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
 
   def get_redirect_path
     case URI(request.referrer).path
-    when /\/can_can_can\//
-      can_can_can_posts_path
+    when /\/can_can\//
+      can_can_posts_path
     when /\/pundit\//
       pundit_posts_path
     else
