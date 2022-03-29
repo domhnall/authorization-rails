@@ -11,11 +11,15 @@ in the context of a simple blog post controller.
 
 ## Set up the project
 
-> git pull
-> bundle install
-> bundle exec rake db:drop && bundle exec rake db:migrate && bundle exec rake db:seed
+```
+  > git pull
+  > bundle install
+  > bundle exec rake db:drop && bundle exec rake db:migrate && bundle exec rake db:seed
+```
 
 
 ## Run the tests
 
-> bundle exec rake
+```
+  > bundle exec rake
+```
