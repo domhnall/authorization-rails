@@ -1,5 +1,17 @@
 # authorization-rails
 
+## Using instance variables within a Rails AR model (this branch)
+
+This branch contains an extension to the original repo in order to
+demonstrate the technique of using an instance variable within a Rails
+ActiveRecord model. This technique is discussed in the following blog
+post:
+
+https://www.vector-logic.com/blog/posts/using-instance-variables-within-rails-active-record-objects
+
+
+## Original repo (main branch)
+
 The repo contains the source code referenced in the VectorLogic blog
 post entitled "Authorizing controller endpoints in Rails":
 
